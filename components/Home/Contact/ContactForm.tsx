@@ -53,6 +53,7 @@ export default function ContactForm() {
         value={form.name}
         onChange={handleChange}
         required
+        autoComplete="name"
         className="w-full px-4 py-3 rounded-lg bg-gray-800 text-white"
       />
       <input
@@ -62,14 +63,16 @@ export default function ContactForm() {
         value={form.email}
         onChange={handleChange}
         required
+        autoComplete="email"
         className="w-full px-4 py-3 rounded-lg bg-gray-800 text-white"
       />
       <input
-        type="text"
+        type="tel"
         name="phone"
         placeholder="Your Phone"
         value={form.phone}
         onChange={handleChange}
+        autoComplete="tel"
         className="w-full px-4 py-3 rounded-lg bg-gray-800 text-white"
       />
       <textarea
@@ -78,6 +81,7 @@ export default function ContactForm() {
         value={form.message}
         onChange={handleChange}
         required
+        autoComplete="off"
         className="w-full px-4 py-3 rounded-lg bg-gray-800 text-white h-32"
       />
       <button

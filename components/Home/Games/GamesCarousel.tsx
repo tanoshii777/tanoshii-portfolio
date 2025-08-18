@@ -103,13 +103,14 @@ export default function LogoCarousel() {
                 rel="noopener noreferrer"
                 className="flex items-center justify-center min-w-[200px]"
               >
-                <Image
-                  src={logo}
-                  alt="Game Logo"
-                  width={140}
-                  height={80}
-                  className="opacity-90 object-contain drop-shadow-[0_0_12px_rgba(255,0,0,0.4)] hover:scale-110 transition-transform duration-300"
-                />
+                <div className="relative w-[140px] h-[140px] flex items-center justify-center">
+                  <Image
+                    src={logo}
+                    alt="Game Logo"
+                    fill
+                    className="object-contain opacity-90 drop-shadow-[0_0_12px_rgba(255,0,0,0.4)] hover:scale-110 transition-transform duration-300"
+                  />
+                </div>
               </a>
             );
           })}
