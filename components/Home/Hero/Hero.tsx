@@ -5,6 +5,7 @@ import Image from "next/image";
 import Typewriter from "typewriter-effect";
 import { BsArrowRight } from "react-icons/bs";
 import ParticleBackground from "./ParticleBackground";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -57,10 +58,12 @@ export default function Hero() {
         />
       </h2>
 
-      <button className="mt-6 px-6 py-4 bg-blue-800 hover:bg-blue-900 trnasition-all duration-300 cursor-pointer rounded-full text-lg font-medium">
-        <span>Go to my Work</span>
-        <BsArrowRight className="w-5 h-5 ml-2 inline-block" />
-      </button>
+      <Link href="#works" passHref>
+        <button className="mt-6 px-6 py-4 bg-blue-800 hover:bg-blue-900 transition-all duration-300 cursor-pointer rounded-full text-lg font-medium flex items-center">
+          <span>Go to my Work</span>
+          <BsArrowRight className="w-5 h-5 ml-2" />
+        </button>
+      </Link>
     </div>
   );
 }
