@@ -39,7 +39,7 @@ export default function Contact() {
               <BiEnvelope className="w-8 h-8 text-cyan-400" />
               <a
                 href="mailto:aljoybascon.programmer@gmail.com"
-                className="text-lg text-gray-300 font-medium underline hover:text-cyan-300 transition-colors"
+                className="text-lg text-gray-300 font-medium underline hover:text-violet-400 transition-colors"
               >
                 aljoybascon.programmer@gmail.com
               </a>
