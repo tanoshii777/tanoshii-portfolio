@@ -41,11 +41,13 @@ export default function Nav({ openNav }: Props) {
       <div className="flex items-center h-full justify-between w-[90%] mx-auto">
         {/* Logo Section */}
         <div className="flex items-center space-x-2">
-          <img
-            src="/images/logo.jpg"
-            alt="My logo"
-            className="rounded-full border-2 border-violet-600 w-10 h-10 sm:w-12 sm:h-12 lg:w-16 lg:h-16"
-          />
+          <Link href="#home" scroll={true}>
+            <img
+              src="/images/logo.jpg"
+              alt="My logo"
+              className="rounded-full border-2 border-violet-600 w-10 h-10 sm:w-12 sm:h-12 lg:w-16 lg:h-16 cursor-pointer"
+            />
+          </Link>
           <h1 className="text-xl hidden tracking-[0.3cap] ml-2 text-cyan-400 sm:block md:text-2xl font-bold">
             Tanosh
             <span className="inline-block -ml-1 rotate-[-10deg] scale-90">
