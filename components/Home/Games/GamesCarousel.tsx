@@ -80,7 +80,7 @@ export default function LogoCarousel() {
               display: "inline-block",
             }}
           >
-            My Games
+            Let&apos;s Play
           </motion.span>
         </span>
       </h1>
