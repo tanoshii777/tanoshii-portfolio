@@ -3,6 +3,7 @@
 import React from "react";
 import { BiEnvelope, BiMap, BiPhone } from "react-icons/bi";
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaPlay } from "react-icons/fa";
 import ContactForm from "./ContactForm";
 
 export default function Contact() {
@@ -12,17 +13,17 @@ export default function Contact() {
         {/* LEFT SIDE - Info + Socials */}
         <div>
           <h1 className="text-4xl md:text-5xl font-extrabold text-white leading-tight">
-            {"Let’s "}
+            Let&apos;s
             <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
               Work Together
             </span>
           </h1>
           <p className="text-gray-400 mt-6 text-lg leading-relaxed">
-            I’m eager to begin my career journey and contribute my skills to a
-            forward-thinking company. With a strong foundation in technology,
-            I’m ready to adapt and learn new knowledge. If you’re looking for
-            someone driven, consistent, adaptable, and committed to growth —
-            let’s connect!
+            I&apos;m eager to begin my career journey and contribute my skills
+            to a forward-thinking company. With a strong foundation in
+            technology, I&apos;m ready to adapt and learn new knowledge. If
+            you&apos;re looking for someone driven, consistent, adaptable, and
+            committed to growth. Tanoshii — &apos;s connect!
           </p>
 
           {/* Contact Info */}
@@ -82,6 +83,17 @@ export default function Contact() {
                          transition-transform transform hover:scale-110 hover:bg-gradient-to-tr hover:from-yellow-400 hover:via-pink-500 hover:to-purple-600 hover:shadow-lg hover:shadow-pink-500/50"
             >
               <FaInstagram className="text-white w-5 h-5" />
+            </a>
+
+            <a
+              href="https://kick.com/tanoshii777/videos/f94ed2d0-6a2c-44c0-82d4-8d9e31923f1c"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-12 h-12 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center 
+             transition-transform transform hover:scale-110 hover:bg-gradient-to-br hover:from-[#00FF00] hover:to-green-700 hover:shadow-lg hover:shadow-[#00FF00]/50"
+            >
+              {/* For now using a bold K, can replace with Kick SVG */}
+              <span className="text-[#00FF00] font-extrabold text-lg">K</span>
             </a>
           </div>
         </div>
