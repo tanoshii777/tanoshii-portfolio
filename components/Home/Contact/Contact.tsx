@@ -1,10 +1,12 @@
 "use client";
 
 import React from "react";
+
 import { BiEnvelope, BiMap, BiPhone } from "react-icons/bi";
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import { FaPlay } from "react-icons/fa";
 import ContactForm from "./ContactForm";
+import EmailLinks from "./EmailLinks";
 
 export default function Contact() {
   return (
@@ -23,7 +25,7 @@ export default function Contact() {
             to a forward-thinking company. With a strong foundation in
             technology, I&apos;m ready to adapt and learn new knowledge. If
             you&apos;re looking for someone driven, consistent, adaptable, and
-            committed to growth. Tanoshii — &apos;s connect!
+            committed to growth. Tanoshii — Let&apos;s connect!
           </p>
 
           {/* Contact Info */}
@@ -35,15 +37,8 @@ export default function Contact() {
               </p>
             </div>
 
-            <div className="flex items-center space-x-4">
-              <BiEnvelope className="w-8 h-8 text-cyan-400" />
-              <a
-                href="mailto:aljoybascon.programmer@gmail.com"
-                className="text-lg text-gray-300 font-medium underline hover:text-violet-400 transition-colors"
-              >
-                aljoybascon.programmer@gmail.com
-              </a>
-            </div>
+            {/**   EMAIL DESKTOP AND MOBILE  */}
+            <EmailLinks />
 
             <div className="flex items-center space-x-4">
               <BiMap className="w-8 h-8 text-cyan-400" />
