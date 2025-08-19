@@ -4,6 +4,7 @@ import {
   SiTailwindcss,
   SiTypescript,
   SiNextdotjs,
+  SiPhp,
 } from "react-icons/si";
 
 const skills = [
@@ -31,6 +32,11 @@ const skills = [
     name: "TypeScript",
     icon: <SiTypescript className="text-blue-500 w-8 h-8" />,
     percentage: 72,
+  },
+  {
+    name: "PHP",
+    icon: <SiPhp className="text-indigo-400 w-8 h-8" />,
+    percentage: 65,
   },
 ];
 
