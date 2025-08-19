@@ -45,7 +45,7 @@ export default function Hero() {
             strings: [
               "Frontend Developer",
               "Backend Developer",
-              "Ethical Hacker",
+              "Cybersecurity Enthusiast",
             ],
             autoStart: true,
             loop: true,
