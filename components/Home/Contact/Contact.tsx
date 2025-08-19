@@ -3,7 +3,7 @@
 import React from "react";
 
 import { BiEnvelope, BiMap, BiPhone } from "react-icons/bi";
-import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaYoutube, FaLinkedin } from "react-icons/fa";
 import { FaPlay } from "react-icons/fa";
 import ContactForm from "./ContactForm";
 import EmailLinks from "./EmailLinks";
@@ -40,6 +40,7 @@ export default function Contact() {
             {/**   EMAIL DESKTOP AND MOBILE  */}
             <EmailLinks />
 
+            {/** MY LOCATION */}
             <div className="flex items-center space-x-4">
               <BiMap className="w-8 h-8 text-cyan-400" />
               <p className="text-lg text-gray-300 font-medium">
@@ -61,13 +62,13 @@ export default function Contact() {
             </a>
 
             <a
-              href="https://youtube.com"
+              href="https://www.linkedin.com/in/aljoy-bascon-409160368/"
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center 
                          transition-transform transform hover:scale-110 hover:bg-gradient-to-br hover:from-red-500 hover:to-red-700 hover:shadow-lg hover:shadow-red-500/50"
             >
-              <FaYoutube className="text-white w-5 h-5" />
+              <FaLinkedin className="text-white w-5 h-5" />
             </a>
 
             <a
