@@ -13,7 +13,7 @@ export default function Contact() {
         {/* LEFT SIDE - Info + Socials */}
         <div>
           <h1 className="text-4xl md:text-5xl font-extrabold text-white leading-tight">
-            Let&apos;s
+            Let&apos;s{" "}
             <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
               Work Together
             </span>
