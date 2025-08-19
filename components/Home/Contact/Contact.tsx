@@ -66,7 +66,7 @@ export default function Contact() {
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center 
-                         transition-transform transform hover:scale-110 hover:bg-gradient-to-br hover:from-red-500 hover:to-red-700 hover:shadow-lg hover:shadow-red-500/50"
+             transition-transform transform hover:scale-110 hover:bg-gradient-to-br hover:from-blue-600 hover:to-blue-800 hover:shadow-lg hover:shadow-blue-500/50"
             >
               <FaLinkedin className="text-white w-5 h-5" />
             </a>
