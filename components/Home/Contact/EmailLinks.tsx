@@ -28,7 +28,7 @@ export default function EmailLink() {
         rel="noopener noreferrer"
         className="text-lg text-gray-300 font-medium underline hover:text-violet-400 transition-colors"
       >
-        aljoybascon.programmer@gmail.com
+        aljoybascon.programmer
       </a>
     </div>
   );
