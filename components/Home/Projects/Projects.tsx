@@ -49,21 +49,23 @@ function ProjectCard({ navId, slides }: any) {
         {slides.map((slide: any, idx: number) => (
           <SwiperSlide key={idx}>
             <div
-              className="relative w-full h-[300px] sm:h-[500px] cursor-pointer"
+              className="relative w-full h-[300px] sm:h-[500px] cursor-pointer bg-transparent"
               onClick={() => {
                 setStartIndex(idx);
                 setLightboxOpen(true);
               }}
             >
-              {/* Image */}
               <Image
                 src={slide.src}
-                alt="..."
+                alt={slide.title || "Project"}
                 fill
-                className="object-contain sm:object-cover"
+                className="object-cover"
               />
 
-              {/* Title + description with transparent black bg */}
+              {/* Subtle overlay */}
+              <div className="absolute inset-0 bg-black/8"></div>
+
+              {/* Title + description */}
               {(slide.title || slide.tech) && (
                 <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/70 to-transparent p-4">
                   {slide.title && (
