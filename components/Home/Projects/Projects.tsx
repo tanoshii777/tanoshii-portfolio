@@ -49,18 +49,20 @@ function ProjectCard({ navId, slides }: any) {
         {slides.map((slide: any, idx: number) => (
           <SwiperSlide key={idx}>
             <div
-              className="relative w-full h-[400px] cursor-pointer bg-black"
+              className="relative w-full h-[650px] cursor-pointer bg-black"
               onClick={() => {
                 setStartIndex(idx);
                 setLightboxOpen(true);
               }}
             >
-              <Image
-                src={slide.src}
-                alt={`${slide.title || "Project"} Preview ${idx + 1}`}
-                fill
-                className="rounded-lg object-contain" // 👈 fixed: no cropping
-              />
+              <div className="relative w-full h-[650px] cursor-pointer rounded-lg overflow-hidden shadow-lg">
+                <Image
+                  src={slide.src}
+                  alt="..."
+                  fill
+                  className="object-cover"
+                />
+              </div>
 
               {(slide.title || slide.tech) && (
                 <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/70 to-transparent p-4">
@@ -117,12 +119,12 @@ function ProjectCard({ navId, slides }: any) {
             {slides.map((slide: any, idx: number) => (
               <SwiperSlide key={idx}>
                 <div className="relative w-full h-full flex flex-col items-center justify-center">
-                  <div className="relative w-[90%] h-[80%] bg-black">
+                  <div className="relative w-[800px] h-[650px] bg-black rounded-lg overflow-hidden shadow-lg">
                     <Image
                       src={slide.src}
                       alt={`${slide.title || "Project"} Full ${idx + 1}`}
                       fill
-                      className="object-contain"
+                      className="object-cover"
                     />
                   </div>
 
