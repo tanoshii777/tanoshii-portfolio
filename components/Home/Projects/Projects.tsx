@@ -249,6 +249,52 @@ export default function Projects() {
           navId="4"
           slides={[
             {
+              src: "/images/mobile8.png",
+              title: "Dashboard-Footer",
+              tech: "Next.js, TMDB API",
+            },
+            {
+              src: "/images/mobile7.png",
+              title: "Sign In",
+              tech: "",
+            },
+            {
+              src: "/images/mobile6.png",
+              title: "Movie",
+              tech: "",
+            },
+            {
+              src: "/images/mobile5.png",
+              title: "Registration",
+              tech: "",
+            },
+            {
+              src: "/images/mobile4.png",
+              title: "Movie Details",
+              tech: "Start to watch",
+            },
+            {
+              src: "/images/mobile3.png",
+              title: "Movie Details",
+              tech: "Banner Trailers",
+            },
+            {
+              src: "/images/mobile2.png",
+              title: "Dashboard",
+              tech: "Movies",
+            },
+            {
+              src: "/images/mobile1.png",
+              title: "Modal With continue",
+              tech: "Continue watching",
+            },
+            {
+              src: "/images/mobile.png",
+              title: "Modal",
+              tech: "Rate or 💖",
+            },
+
+            {
               src: "/images/movie (3).png",
               title: "JoyFlix Dashboard",
               tech: "Next.js, TMDB API",
