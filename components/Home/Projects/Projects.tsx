@@ -24,7 +24,7 @@ function ProjectCard({ navId, slides }: any) {
 
     if (lightboxOpen) {
       document.addEventListener("keydown", handleKey);
-      window.history.pushState({ lightbox: true }, ""); // add history state
+      window.history.pushState({ lightbox: true }, "");
       window.addEventListener("popstate", handlePopState);
     }
 
@@ -49,21 +49,21 @@ function ProjectCard({ navId, slides }: any) {
         {slides.map((slide: any, idx: number) => (
           <SwiperSlide key={idx}>
             <div
-              className="relative w-full h-[650px] cursor-pointer bg-black"
+              className="relative w-full h-[300px] sm:h-[500px] cursor-pointer"
               onClick={() => {
                 setStartIndex(idx);
                 setLightboxOpen(true);
               }}
             >
-              <div className="relative w-full h-[650px] cursor-pointer rounded-lg overflow-hidden shadow-lg">
-                <Image
-                  src={slide.src}
-                  alt="..."
-                  fill
-                  className="object-cover"
-                />
-              </div>
+              {/* Image */}
+              <Image
+                src={slide.src}
+                alt="..."
+                fill
+                className="object-contain sm:object-cover"
+              />
 
+              {/* Title + description with transparent black bg */}
               {(slide.title || slide.tech) && (
                 <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/70 to-transparent p-4">
                   {slide.title && (
@@ -100,10 +100,10 @@ function ProjectCard({ navId, slides }: any) {
         <div className="fixed left-0 right-0 top-[80px] bottom-0 bg-black/90 z-50 flex flex-col">
           {/* Close button */}
           <button
-            className="absolute top-5 right-5 text-white text-4xl z-50"
+            className="absolute top-4 right-4 text-white text-3xl sm:text-4xl z-50"
             onClick={() => {
               setLightboxOpen(false);
-              window.history.back(); // return to previous state
+              window.history.back();
             }}
           >
             <BiX />
@@ -118,25 +118,29 @@ function ProjectCard({ navId, slides }: any) {
           >
             {slides.map((slide: any, idx: number) => (
               <SwiperSlide key={idx}>
-                <div className="relative w-full h-full flex flex-col items-center justify-center">
-                  <div className="relative w-[800px] h-[650px] bg-black rounded-lg overflow-hidden shadow-lg">
+                <div className="relative w-full h-full flex flex-col items-center justify-center px-4">
+                  {/* Image wrapper */}
+                  <div className="relative w-full max-w-[1000px] h-[75vh] sm:h-[85vh] bg-black rounded-lg overflow-hidden shadow-lg">
                     <Image
                       src={slide.src}
                       alt={`${slide.title || "Project"} Full ${idx + 1}`}
                       fill
-                      className="object-cover"
+                      className="object-contain" // keep full image in lightbox
                     />
                   </div>
 
+                  {/* Title + description */}
                   {(slide.title || slide.tech) && (
-                    <div className="text-center mt-4 px-6">
+                    <div className="text-center mt-4 px-2 sm:px-6">
                       {slide.title && (
-                        <h1 className="text-xl font-bold text-white">
+                        <h1 className="text-lg sm:text-xl md:text-2xl font-bold text-white">
                           {slide.title}
                         </h1>
                       )}
                       {slide.tech && (
-                        <p className="text-md text-gray-300">{slide.tech}</p>
+                        <p className="text-sm sm:text-md md:text-lg text-gray-300">
+                          {slide.tech}
+                        </p>
                       )}
                     </div>
                   )}
@@ -149,6 +153,7 @@ function ProjectCard({ navId, slides }: any) {
     </div>
   );
 }
+
 export default function Projects() {
   return (
     <div className="pt-16 pb-16">
@@ -159,7 +164,7 @@ export default function Projects() {
       </h1>
 
       {/* Projects Grid */}
-      <div className="w-[70%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 mt-16">
+      <div className="w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 mt-16 px-4">
         <ProjectCard
           navId="1"
           slides={[
