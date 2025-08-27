@@ -33,7 +33,7 @@ export default function Resume() {
             <ResumeCard
               Icon={FaCodepen}
               role="Computer System Servicing (CSS) – Senior High School (2018 – 2020)"
-              description="Gained hands-on experience in PC assembly, system reformatting, and OS installation (Windows, Linux Ubuntu, Kali Linux for penetration testing)."
+              description="Acquired hands-on experience in PC assembly, system reformatting, and progressed my learnings operating system installations, including Windows, Linux, Ubuntu, Fedora,  and Kali Linux for penetration testing and Metasploit Sessions."
             />
           </div>
         </div>
@@ -51,7 +51,7 @@ export default function Resume() {
               date="2021 - 2025"
               showDate
               showFreshGraduate
-              description="Gained strong foundations in programming and IT. Built several projects using PHP, Next.js, Tailwind CSS, Framer Motion, MongoDB, and MySQL, focusing on creating modern and responsive web applications."
+              description="Developed a strong foundation in programming and IT, building several projects with PHP, HTML, CSS, JavaScript and MySQL. Expanded skills by learning React.js, MongoDB, and Atlas, and later advanced to using Next.js, Tailwind CSS, Framer Motion, and Supabase to focus on creating modern, responsive web applications."
             />
             <ResumeCard
               Icon={MdSchool}
