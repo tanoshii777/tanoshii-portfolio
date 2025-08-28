@@ -40,7 +40,7 @@ export default function MobileNavbar({ showNav, closeNav }: Props) {
               link.label === "Resume" ? (
                 <a
                   key={link.id}
-                  href="/resume/aljoy-bascon.pdf"
+                  href="/resume/Aljoy-Bascon.pdf"
                   download
                   onClick={closeNav}
                   className="text-white text-xl sm:text-2xl border-b border-white/20 pb-1 
