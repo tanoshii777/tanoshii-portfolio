@@ -33,7 +33,7 @@ export default function Resume() {
             <ResumeCard
               Icon={FaCodepen}
               role="Computer System Servicing (CSS) – Senior High School (2018 – 2020)"
-              description="Acquired hands-on experience in PC assembly, system reformatting, and progressed my learnings operating system installations, including Windows, Linux, Ubuntu, Fedora,  and Kali Linux for penetration testing and Metasploit Sessions."
+              description="Acquired hands-on experience in PC assembly, system reformatting, and progressed my learnings to operating system installations, including Windows, Linux, Ubuntu, Fedora,  and Kali Linux for penetration testing and Metasploit Sessions."
             />
           </div>
         </div>
