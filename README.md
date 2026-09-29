@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Tanoshii Portfolio
 
-## Getting Started
+A responsive developer portfolio built with Next.js 16, React, TypeScript, and Tailwind CSS. It includes a hero introduction, services, skills, selected projects, resume timeline, mini-games, and a contact form.
 
-First, run the development server:
+## Create your own portfolio
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. **Clone or download the project**
+   ```bash
+   git clone <your-repository-url>
+   cd tanoshii-portfolio
+   ```
+2. **Install dependencies**
+   ```bash
+   pnpm install
+   ```
+3. **Configure contact delivery**
+   Create `.env.local` and add a Resend API key:
+   ```env
+   RESEND_API_KEY=re_your_key_here
+   ```
+   The contact endpoint returns a clear configuration error until this variable is set; the rest of the portfolio remains buildable without it.
+4. **Personalize the content**
+   Update the text, links, project data, services, skills, and resume entries in `components/Home/`. Update SEO metadata in `app/layout.tsx`.
+5. **Run the development server**
+   ```bash
+   pnpm dev
+   ```
+   Open [http://localhost:3000](http://localhost:3000).
+6. **Check the production build**
+   ```bash
+   pnpm build
+   pnpm start
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Project structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `app/page.tsx` — portfolio page entry point
+- `app/layout.tsx` — global metadata, fonts, and document shell
+- `app/globals.css` — theme tokens, responsive styles, and animations
+- `components/Home/` — portfolio sections and interactive components
+- `app/api/contact/route.ts` — validated contact form email endpoint
+- `public/` — static assets such as images, icons, and documents
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Content checklist
 
-## Learn More
+- Replace the profile name, bio, role, social URLs, and email address.
+- Add real project links and screenshots with descriptive alt text.
+- Replace the resume file and update experience and education entries.
+- Use a verified sender domain in Resend before production launch.
+- Review keyboard navigation, mobile layouts, reduced motion, and form error states.
 
-To learn more about Next.js, take a look at the following resources:
+## Deploy to Vercel
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Import the repository into [Vercel](https://vercel.com/new), set `RESEND_API_KEY` in the project environment variables, and deploy. Vercel automatically detects the Next.js build settings.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Recommended maintenance
 
-## Deploy on Vercel
+Run `pnpm build` before publishing, keep dependencies current, compress large images, and test the contact form from the deployed URL. Never commit `.env.local` or API keys.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Learn more
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Next.js documentation](https://nextjs.org/docs)
+- [Tailwind CSS documentation](https://tailwindcss.com/docs)
+- [Resend documentation](https://resend.com/docs)
+- [Vercel deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying)
+
+## License
+
+Add the license that matches how you want others to use this portfolio.
